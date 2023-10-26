@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import StartCourseForm from './components/StartCourseForm';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="pl-[20%] pt-[10%] pb-[2%]">
+      <header className="h-[62px]"></header>
+      <main className="flex">
+        <section className="w-[50%]">
+          <h1 className="font-bold text-[35px] leading-[41px] mb-[57px]">
+            Submit your details
+          </h1>
+          <StartCourseForm />
+        </section>
+        <section className="w-[50%]"></section>
+      </main>
     </div>
   );
 }
